@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #ffffff; 
+}
+*,
+*before,
+*after{
+ box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.gf{
+    text-decoration: none;
+    font-family:'Kaushan Script'; 
+    color:#000;
+}
+
+/*container*/
+.container{
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto; 
+}
+
+
+
+
+.main-title {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.separator {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    margin: 15px 0;
+}
+
+.section-title {
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+}
+
+.news-topic {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.news-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    margin: 0;
+}
+
+.news-author {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    margin: 0;
+    text-align: right 
+}
+
+.photo-container {
+    width: 50%;
+    overflow: hidden; 
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+/*intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 30px; 
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px; 
+    box-sizing: border-box;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 40px 0 20px; 
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 5px;
+    background-color: #fff;
+    margin: 15px auto; 
+}
+
+.intro__suptitle {
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 50px;
+}
+
+/* header */
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 8px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header--fixed {
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; 
+}
+
+/* nav */
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: black;
+    margin-left: auto; 
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family:'Poppins','sans-serif';
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    background-color: transparent; 
+    color: black;
+}
+
+.nav__link:hover:after {
+    opacity: 0;
+}
+
+/* Section */
+     .section {
+        padding: 100px 0;
+        background: #fff;
+    }
+
+    .section__header {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto 40px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .section__suptitle {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 90px;
+        color: #333;
+        margin-bottom: 10px;
+        line-height: 1;
+
+    }
+
+/* Charts */
+.charts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.charts-item {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1;
+    text-align: left;
+    width: 80%;
+    border-top: 1px solid #ccc;
+    padding-top: 30px; 
+}
+
+.charts-item img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 50px; 
+}
+
+.charts-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.charts-item span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    margin-top: 40px;
+}
+
+#audioPlayer {
+    width: 50%;
+    margin: 5px auto;
+}
+
+.music-player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* збільшив відступ для кращого вигляду */
+}
+
+.music-player-controls button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.music-player-controls button:hover {
+    background-color: #777;
+}
+
+#songTitle {
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0; /* збільшив відступ для кращого вигляду */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px 15px 15px 15px; /* Заокруглення всіх кутів */
+    outline: none;
+    margin-left: auto /* Додав відступ справа для розділення від кнопки */
+}

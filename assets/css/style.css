@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("assets/img/rock.png") center no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.gf{
+    text-decoration: none;
+    font-family:'Kaushan Script'; 
+    color:#000;
+}
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto; 
+}
+
+.containernews {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.section__news {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+}
+.section__news1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1;
+    text-align: center; 
+}
+
+.white-bg {
+    background: none; 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+}
+
+.custom-container {
+    flex: 1;
+    background-color: rgba(211, 211, 211, 1);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    position: relative;
+    border-radius: 15px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.separator {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 300px;
+    margin: 15px 0;
+}
+
+.section-title {
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+}
+
+.section-news {
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 40px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+.news-topic {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.news-text {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.news-author {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    margin-left: auto; 
+    font-weight: bold;
+}
+
+.photo-container {
+    width: 50%;
+    overflow: hidden; 
+    margin: 20px; 
+}
+
+.photo-container img {
+    width: 90%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+/*intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/main.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.intro__inner {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro__title {
+    color: #fff;
+    font-family: 'Garamond','sans-serif';
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 5px;
+    background-color: #fff;
+    margin: 15px auto; 
+}
+
+.intro__suptitle {
+    margin-bottom: 15px;
+    font-size: 140px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 50px;
+}
+
+
+/* header */
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 8px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header--fixed {
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; 
+}
+
+/* nav */
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: black;
+    margin-left: auto; 
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family:'Poppins','sans-serif';
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    background-color: transparent; 
+    color: black;
+}
+
+.nav__link:hover:after {
+    opacity: 0;
+}
+/* Section */
+ .section {
+    padding: 80px 0;
+    background: #000000;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+    color: #000000;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+
+.new-social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 40px; 
+}
+
+.new-social-icons a {
+    margin-left: 30px; 
+}
+
+.new-social-icons img {
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+}
+
+.section-divider {
+    width: 80%;
+    height: 4px; /* Збільште висоту, щоб зробити грубше */
+    background-color: #000000;
+    margin: 30px auto; /* Вирівняйте по центру */
+}
+

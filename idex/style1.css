@@ -1,0 +1,194 @@
+/* Fonts and Icons */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url("") center no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+.gf{
+    text-decoration: none;
+    font-family:'Kaushan Script'; 
+    color:#000;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto; 
+}
+
+/* Navigation Styles */
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 8px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header--fixed {
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000; 
+}
+
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.nav__link {
+    color: black;
+    margin-left: auto; 
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family:'Poppins','sans-serif';
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+.nav__link:hover:after {
+    opacity: 0;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px 0;
+    background: #fff;
+    text-align: center; 
+}
+
+.section__header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 20px;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1;
+    text-align: left;
+}
+
+
+.category-title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px; 
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1;
+    text-align: left;
+}
+
+.navigation-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    font-size: 35px; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; /* Change this to your desired font-family */
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* Adjusted line-height to match the height of the button */
+}
+
+.navigation-button:hover {
+    background-color: #333;
+}
+
+.navigation-button.button-1 {
+    background-color: #2F7C90; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.navigation-button.button-2 {
+    background-color: #D71F14; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.navigation-button.button-3 {
+    background-color: #0A1578; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.navigation-button.button-4 {
+    background-color: #FF3D3D; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.navigation-button.button-5 {
+    background-color: #4E0193; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.navigation-button.button-6 {
+    background-color: #3448FC; /* Change this to your desired color */
+    background-image: url(''); /* Replace with actual image URL */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Заокруглення всіх кутів */
+    outline: none;
+    margin-left: auto; /* Додав відступ справа для розділення від кнопки */
+}
+
